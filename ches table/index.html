@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לוח שחמט</title>
+</head>
+<body>
+    <script>
+      let ches=[];
+      let shahmat =[];
+      for (let a = 0; a<8; a++){
+         for (let b = 0; b < 8; b++) {
+                if((a+b)% 2==0){
+                     shahmat.push('black');
+                }
+                else{
+                    shahmat.push('white');
+
+                 }
+                 }
+      ches.push(shahmat);
+      shahmat = [];
+
+     }
+        console.log(ches);
+        </script>
+</body>
+</html>
